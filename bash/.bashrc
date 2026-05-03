@@ -116,6 +116,20 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/son/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/son/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/son/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/son/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
 #pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -124,10 +138,6 @@ eval "$(pyenv init - bash)"
 
 #lets encrypt_acme
 . "/home/son/.acme.sh/acme.sh.env"
-
-#jav
-alias jav='source ~/prj/av/jav_download/jav.sh'
-alias jav2='python jav2_download.py'
 
 #claude code
 export PATH="$HOME/.local/bin:$PATH"
@@ -154,9 +164,20 @@ alias tn='tmux new -s'
 alias tk='tmux kill-session -t'
 
 
-# 머신별 로컬 설정
+
+#머신별 로컬 설정
+
+
 [ -f ~/.bashrc.local ] && . ~/.bashrc.local
+
 
 #selected editor
 export EDITOR=vim
 export VISUAL=vim
+
+
+#global env
+
+set -a
+source ~/.env.global
+set +a
