@@ -1,0 +1,17 @@
+# Stow 관련
+.stow-local-ignore
+
+# 민감 정보
+**/*.local
+**/secrets
+**/.env
+
+# 캐시/히스토리 (실수로 추가 방지)
+**/.bash_history
+**/.zsh_history
+**/.viminfo
+**/.netrc
+
+# OS
+.DS_Store
+Thumbs.db
