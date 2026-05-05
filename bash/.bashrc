@@ -181,3 +181,7 @@ export VISUAL=vim
 set -a
 source ~/.env.global
 set +a
+
+
+#nvim
+alias vi='nvim'

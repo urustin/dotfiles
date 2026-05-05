@@ -29,11 +29,11 @@ set clipboard=unnamedplus
 set mouse=a
 set encoding=utf-8
 
-" 백업/스왑/언두 위치
+" 백업/스왑/언두 위치 (nvim 기본 경로로 변경)
 set undofile
-set undodir=~/.vim/undo//
-set directory=~/.vim/swap//
-set backupdir=~/.vim/backup//
+set undodir=~/.local/share/nvim/undo//
+set directory=~/.local/share/nvim/swap//
+set backupdir=~/.local/share/nvim/backup//
 
 " color
 colorscheme koehler
