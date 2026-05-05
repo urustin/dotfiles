@@ -36,4 +36,4 @@ set directory=~/.local/share/nvim/swap//
 set backupdir=~/.local/share/nvim/backup//
 
 " color
-colorscheme koehler
+" colorscheme koehler
