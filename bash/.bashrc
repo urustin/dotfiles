@@ -185,3 +185,18 @@ set +a
 
 #nvim
 alias vi='nvim'
+
+# Android SDK
+export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"
+export UE4_ROOT=~/UnrealEngine_4.26
+
+#hermes alias
+alias hermes2="hermes --yolo"
+
+#codex alias
+alias codex2="codex --yolo"
+
+
+
