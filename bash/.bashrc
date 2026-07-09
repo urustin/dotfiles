@@ -182,6 +182,9 @@ set -a
 source ~/.env.global
 set +a
 
+#perforce
+export P4PORT=localhost:1666
+export P4USER=seungwoo.son
 
 #nvim
 alias vi='nvim'
