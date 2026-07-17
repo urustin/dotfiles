@@ -1,0 +1,7 @@
+git
+gh
+neovim
+stow
+tmux
+vim
+xclip
